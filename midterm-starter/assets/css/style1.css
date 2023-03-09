@@ -1,0 +1,39 @@
+
+html {
+    margin:0;
+    }
+
+#pic4 img {
+    border-radius:0;
+    background-color:grey;
+    height: 80px;
+    width: 150px;
+    overflow: hidden; 
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  color:black;
+}
+
+#navbar {
+    width: 100%;
+    background-color:lightgoldenrodyellow;
+    overflow: auto;
+  }
+
+  /* Navigation links */
+#navbar {
+    float: left;
+    color: black;
+    text-decoration: dashed;
+    font-size: 20px;
+    width: 100%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+
+ }
+
+  .navbar ho:hover {
+    background-color:green;
+  }
+  
