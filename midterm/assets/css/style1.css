@@ -1,0 +1,148 @@
+
+body {
+    margin:0;
+    padding :0;
+    height:100%;
+    }
+
+#navbar {
+  width: 100%;
+  background-color: rgb(239, 239, 121);
+  overflow: auto;
+  color: black;
+  font-size: 20px;
+  height: 150px;
+}
+    
+    #navbar li:hover {
+      
+      text-decoration: underline; 
+      text-decoration-color: black;
+      text-underline-position: below;
+    }
+    
+    #nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* vertically center align all items */
+      margin: 0;
+      padding: 0;
+      margin-right:30px;
+    }
+
+    #nav-links li {
+      display: inline-block;
+      padding: 0px;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    
+    }
+  
+
+  #logo img{
+    height: 145px;
+    object-fit: cover;
+  }
+    
+  a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+
+  #firstpic{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
+ #secondpic{
+    position: absolute;
+    width: 100%;
+    margin-top: 9px;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+ }
+  .click{
+    float:right;
+    padding-top: 20%;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+  }
+
+  .menu{
+    float:left;
+    padding-top: 45%;
+    padding-left: 90px;
+  }
+
+  .descript{
+    position: absolute;
+    margin-top: 750px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #text{
+    float:left;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    text-align: center;
+    padding-left:30px;
+    margin: 0;
+  }
+
+  #btn{
+    float:right;
+    margin-right:30%;
+    padding-top: 10%;
+  }
+
+  .footer{
+    position: absolute;
+    width: 100%;
+    margin-bottom:0px;
+    margin-top:1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      text-align: center;
+  }
+
+  .footer li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    justify-content: space-between;
+    font-weight:lighter;
+  }
+
+  .footer li a{
+    font-weight: lighter;
+    font-size: medium;
+  }
+  li:hover {
+      
+    text-decoration: underline; 
+    text-decoration-color: black;
+    text-underline-position: below;
+  }
+
+
+  
+
+  

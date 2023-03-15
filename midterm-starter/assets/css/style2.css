@@ -1,0 +1,45 @@
+/* ----------------------------------MENU-------------------------------------------- */
+  
+  .content {
+    height: 100vh;
+    font-family:'Pacifico';
+  }
+
+  .image{
+    float:left;
+    width:20%;
+    height:100vh;
+  }
+
+  .image img{
+    max-width: 400px;
+    height: 100vh;
+  }
+
+  .lists{
+    float:right;
+    width: 70.5%;
+    align-items: end;
+    background-color: rgba(255, 255, 0, 0.3);
+    height:100vh;
+  }
+
+  #hotdogs{
+    float:left;
+    padding-left:40px;
+  }
+
+  #hotdogs #offer{
+   list-style: none; 
+   
+  }
+
+  #hotdogs #type{
+    font-weight: 700;
+    color: rgb(232, 43, 43);
+   }
+
+  #drinks{
+    float:right;
+    padding-right: 40px;
+  }
