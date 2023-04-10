@@ -1,0 +1,38 @@
+/* ADD ANY LINES OF CODE YOU DEEM NECESSARY FOR QUESTION 1*/
+
+.button {
+    display: inline-block;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    background: black;
+    margin: 12px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.45s ease;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#row {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body, html {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background: #f7f5f2;
+    position: relative;
+}
+
+.button:hover {
+    transform: rotate(180deg);
+    opacity: 1;
+    border-radius: 50%;
+  }
