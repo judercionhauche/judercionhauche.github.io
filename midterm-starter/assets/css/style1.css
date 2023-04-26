@@ -97,9 +97,9 @@ body {
   #text{
     float:left;
     display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding-left:30px;
     margin: 0;

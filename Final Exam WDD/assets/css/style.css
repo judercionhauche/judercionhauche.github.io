@@ -1,0 +1,556 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+#navbardiv {
+  background-color: black;
+  /* set background color of navbar */
+  height: 40px;
+  /* set height of navbar */
+  display: flex;
+  /* use flexbox to align items */
+  justify-content: end;
+  /* align items with space between */
+  align-items: center;
+  /* center items vertically */
+  padding: 0 20px;
+  /* add padding to the navbar */
+}
+
+#nav-links {
+  display: flex;
+  /* use flexbox to align items */
+  list-style: none;
+  /* remove default bullet points */
+  margin: 0;
+  /* remove default margin */
+  padding: 0;
+  /* remove default padding */
+  margin-right: auto;
+}
+
+
+#nav-links li {
+  margin: 0 10px;
+  /* add margin between each nav link */
+}
+
+#nav-links li a {
+  color: #fff;
+  /* set color of nav links to white */
+  text-decoration: none;
+  /* remove default underline */
+}
+
+#nav-links li:last-child {
+  margin-right: 0;
+  /* remove margin from the last nav link */
+}
+
+#navbardiv2 {
+  background-color: #30558b;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#nav-links2 {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Reem Sufi', sans-serif;
+  font-size: 16px;
+
+}
+
+#nav-links2 li {
+  margin: 0 10px;
+  text-align: center;
+}
+
+#nav-links2 li:first-child a {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#nav-links2 li {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  width: 600px;
+  justify-content: space-around;
+  font-family: 'Reem Sufi', sans-serif;
+
+}
+
+#nav-links2 li a {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+#images {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+
+
+}
+
+#images img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  overflow-x: scroll;
+
+}
+
+
+#images .scroll-arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  color:white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  z-index: 999;
+
+}
+
+#images .left {
+  left: 5px;
+}
+
+#images .right {
+  right: 5px;
+}
+
+#images .scroll-arrow :hover {
+  color: blue;
+}
+
+
+.scrolling-images {
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.date1 {
+  font-size: 20px;
+  color: white;
+}
+
+
+#image-con {
+  position: relative;
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+  
+
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 2px;
+  width: 33.5%;
+  height: 100%;
+  opacity: 0;
+  color: white;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 600;
+  padding-left: 19px;
+
+
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 10;
+  bottom: 2px;
+  width: 33.5%;
+  height: 100%;
+  opacity: 0;
+  color: white;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 600;
+  padding-left: 19px;
+
+
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 10;
+  bottom: 2px;
+  width: 33.5%;
+  height: 100%;
+  opacity: 0;
+  color: white;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 600;
+  padding-left: 19px;
+
+}
+
+.overlay3 {
+  position: absolute;
+  top: 0;
+  left: 10;
+  bottom: 2px;
+  width: 33.5%;
+  height: 100%;
+  opacity: 0;
+  color: white;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 600;
+  padding-left: 19px;
+
+
+}
+
+.overlay4 {
+  position: absolute;
+  top: 0;
+  left: 10;
+  bottom: 2px;
+  width: 33.5%;
+  height: 100%;
+  opacity: 0;
+  color: white;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 600;
+  padding-left: 19px;
+
+
+
+}
+
+.image-con:hover .overlay1 {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.image-con:hover .overlay2 {
+  opacity: 1;
+}
+
+
+.image-con:hover .overlay {
+  opacity: 1;
+}
+
+.image-con:hover .overlay3 {
+  opacity: 1;
+}
+
+.image-con:hover .overlay4 {
+  opacity: 1;
+}
+
+.text9 {
+  color: yellow;
+}
+
+#pictures {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 300px;
+  text-align: center;
+}
+
+
+.image-container img {
+  float: bottom;
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.date {
+  font-size: 20px;
+  color: green;
+  margin-top: 0px;
+}
+
+.image-heading {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 15px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+hr {
+  width: 20%;
+  margin-top: auto;
+  margin-bottom: 20px;
+  border: 0.5px solid black;
+}
+
+#heading-text {
+  width: 60%;
+  margin: auto;
+  text-decoration: none;
+}
+
+
+.text {
+  text-align: left;
+  padding: 0 200px;
+  margin-bottom: 50px;
+  margin-top: -10px;
+  max-width: 70%;
+}
+
+.text2 {
+  text-align: left;
+  padding: 0 200px;
+  margin-bottom: -235px;
+  margin-top: -10px;
+  max-width: 70%;
+}
+
+.text3 {
+  text-align: left;
+  padding: 0 200px;
+  margin-bottom: -235px;
+  margin-top: -10px;
+  max-width: 70%;
+}
+
+.text4 {
+  text-align: left;
+  padding: 0 200px;
+  margin-bottom: -235px;
+  margin-top: -10px;
+  max-width: 70%;
+}
+
+.text5 {
+  text-align: left;
+  padding: 0 200px;
+  margin-bottom: -235px;
+  margin-top: -10px;
+  max-width: 70%;
+}
+
+
+
+.frame {
+  width: 250px;
+  height: 600px;
+  /* border: 1px solid rgb(198, 196, 196); */
+  border-radius: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  float: right;
+  box-shadow: 0px 0px 3px rgba(149, 145, 145, 0.705);
+  margin-right: 200px;
+}
+
+.avatar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+ 
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+
+
+.circle img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bio-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -60px;
+}
+
+.bio2 {
+  background: #007bb5;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  font-family: 'Reem Sufi', sans-serif;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  
+}
+
+
+#paragraph {
+  text-align: center;
+  max-width: 70%;
+}
+
+.bio2:hover {
+    opacity: 0.5;
+    color: #0f3e53;
+    cursor: pointer;
+    display: inline-block;
+    background: white;
+    border: solid 1px #007bb5;
+}
+
+#social-icons {
+  display:flex;
+  font-size: 20px;
+}
+
+#fb {
+  margin-right: 8px;
+}
+#fb :hover{
+  color:  #007bb5;
+  cursor: pointer;
+}
+
+#insta {
+  margin-left: 8px;
+}
+#insta :hover{
+  color: #E4405F ;
+  cursor: pointer;
+}
+
+#linkedin :hover{
+  color: #0077b5;
+  cursor: pointer;
+}
+
+#heading-text:hover{
+  cursor: pointer;
+
+}
+ 
+#heading-text a{
+  text-decoration: none;
+  color: #0f3e53;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0 ;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.footer-links li {
+  margin: 0 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+#icon7 {
+  font-size: 25px;
+  margin: 0 20px;
+}
+
+.main-container {
+  margin-top: 100px;
+}
+
+ #scroll-to-top  {
+  color: black;
+  position: absolute;
+  margin-bottom: 300px;
+  margin-left: 600px;
+  font-size: 50px;
+  z-index: 1;
+}
+
+#scroll-to-top:hover {
+  opacity: 0.5;
+}
+
