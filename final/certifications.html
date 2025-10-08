@@ -1,216 +1,244 @@
-<!doctype html>
-<html lang="zxx">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Judercio's Blog</title>
-    <link rel="icon" href="../final/img/Afrikanah.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/all.css">
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="css/slick.css">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications | Judercio Nhauche</title>
+  <link rel="icon" href="../final/img/Afrikanah.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    :root {
+      --bg1: #0b0f1a;
+      --bg2: #111826;
+      --text: #e8eefc;
+      --muted: #9da6c0;
+      --glass: rgba(255,255,255,0.05);
+      --stroke: rgba(255,255,255,0.15);
+      --accent: #59e3ff;
+      --accent2: #8a7dff;
+      --radius: 18px;
+    }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background:
+        radial-gradient(1200px 700px at 70% 10%, rgba(138,125,255,.12), transparent 60%),
+        radial-gradient(900px 700px at 20% 90%, rgba(89,227,255,.12), transparent 60%),
+        linear-gradient(160deg, var(--bg1), var(--bg2));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+    /* Navbar */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(14px);
+      background: rgba(15,18,30,0.6);
+      border-bottom: 1px solid var(--stroke);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 2rem;
+    }
+    .brand {
+      font-family: Poppins, Inter, sans-serif;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      padding: 0.4rem 0.8rem;
+      border-radius: 10px;
+    }
+    nav a:hover { background: rgba(255,255,255,0.08); }
+    .active { background: rgba(255,255,255,0.1); }
+    .btn-cv {
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      border: none;
+      color: #08121f;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .btn-cv:hover { opacity: 0.85; transform: translateY(-1px); }
 
+    /* Header title */
+    .page-head {
+      text-align: center;
+      margin: 3rem 0 2rem;
+    }
+    .page-head h1 {
+      font-family: Poppins, Inter, sans-serif;
+      font-weight: 700;
+      background: linear-gradient(90deg, #fff, #9ddcff, #b5a6ff, #fff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 200% 100%;
+      animation: shine 7s ease-in-out infinite;
+    }
+    @keyframes shine { 
+      0%{background-position:0 0} 50%{background-position:100% 0} 100%{background-position:0 0}
+    }
+
+    /* Grid */
+    .cert-grid {
+      display: grid;
+      gap: 1.8rem;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      padding: 0 2rem 4rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Card */
+    .cert-card {
+      border-radius: var(--radius);
+      border: 1px solid var(--stroke);
+      background: var(--glass);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 10px 40px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.05);
+      overflow: hidden;
+      transition: transform .25s ease, box-shadow .3s ease;
+      position: relative;
+    }
+    .cert-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 50px rgba(0,0,0,.6);
+    }
+    .cert-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+    .cert-content {
+      padding: 1.3rem 1.2rem 1.6rem;
+    }
+    .cert-content h3 {
+      font-size: 1.1rem;
+      margin-bottom: .4rem;
+      font-weight: 600;
+    }
+    .cert-content p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+    .cert-date {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      color: #08121f;
+      padding: 0.35rem 0.7rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    /* Reveal */
+    [data-reveal]{opacity:0; transform: translateY(14px); transition:opacity .6s ease, transform .6s ease;}
+    [data-reveal].visible{opacity:1; transform:none;}
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(255,255,255,.1);
+      text-align: center;
+      padding: 1.2rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
-
-<div id="navbardiv"> 
-    <nav id="navbar">
-        <ul id="nav-links">
-            <li><a href="#"> Portuguese</a></li>
-            <li><a href="#">English</a></li>
-        </ul>
+<body>
+  <header>
+    <a href="#" class="brand">Judercio Nhauche</a>
+    <nav>
+      <a href="index.html">Portfolio</a>
+      <a href="podcast.html">Podcasts</a>
+      <a href="certifications.html" class="active">Certifications</a>
+      <a href="#contact">Contact</a>
+      <a href="MSBA_Resume_Jose_Nhauche.pdf" download class="btn-cv"><i class="fa-solid fa-download"></i> CV</a>
     </nav>
-</div>
+  </header>
 
+  <section class="page-head">
+    <h1>Certifications & Achievements</h1>
+    <p style="color:var(--muted);max-width:640px;margin:0 auto;">Selected programs, trainings, and milestones that have shaped my data and business analytics journey.</p>
+  </section>
 
-<div id="navbardiv2">
-    <nav id="navbar2">
-        <ul id="nav-links2">
-            <li><a href="#">Certifications</a></li>
-            <li>
-                <a href="index.html">Blog</a>
-                <a href="blog.html">Podcasts</a>
-                <a href="#">Certifications</a>
-                <a href="#">Contact</a>
-            </li>
+  <section class="cert-grid">
+    <!-- Card 1 -->
+    <article class="cert-card" data-reveal>
+      <img src="../final/kreativ.jpg" alt="Marketing Hands-on Program">
+      <div class="cert-content">
+        <h3>Marketing — Hands-on Training Program</h3>
+        <p>Collaborated with a cross-functional team to design and execute a unified media plan for IKEA (Spain). Analyzed Delta Airlines’ market segmentation and positioning, creating strategic growth insights that improved reach by 10%.</p>
+      </div>
+      <div class="cert-date">Aug 12, 2023</div>
+    </article>
 
-        </ul>
-    </nav>
-</div>
+    <!-- Card 2 -->
+    <article class="cert-card" data-reveal>
+      <img src="../final/img/berkeley.jpg" alt="UC Berkeley Program">
+      <div class="cert-content">
+        <h3>UC Berkeley Study Abroad Program</h3>
+        <p>Completed coursework in Technology Entrepreneurship, Startup Design for Social Transformation, Web Design, and Transformative Leadership at UC Berkeley's SCET as part of my MSBA journey.</p>
+      </div>
+      <div class="cert-date">May 12, 2023</div>
+    </article>
 
-   <!-- breadcrumb part start -->
+    <!-- Card 3 -->
+    <article class="cert-card" data-reveal>
+      <img src="../final/img/AIESEC.JPG" alt="AIESEC YouthSpeak Projects">
+      <div class="cert-content">
+        <h3>YouthSpeak Project Competition — AIESEC Mozambique</h3>
+        <p>Led a team that won 1st place in the provincial phase of YouthSpeak, developing innovative SDG-focused solutions to empower youth through entrepreneurship.</p>
+      </div>
+      <div class="cert-date">Jul 26, 2022</div>
+    </article>
 
-<!-- breadcrumb part end -->
+    <!-- Card 4 -->
+    <article class="cert-card" data-reveal>
+      <img src="../final/img/intUK.jpeg" alt="Internship UK">
+      <div class="cert-content">
+        <h3>Internship UK — Business Marketing & Operations</h3>
+        <p>Completed internship in business marketing and operations, focusing on campaign design, client outreach, and process optimization for global audiences.</p>
+      </div>
+      <div class="cert-date">Jun 22, 2022</div>
+    </article>
+  </section>
 
-<div class="container" style="display: flex;margin-right: 50px
-;">
+  <footer>
+    © <span id="year"></span> Judercio Nhauche — All Rights Reserved.
+  </footer>
 
-    <!--================Blog Area =================-->
-    <section class="blog_area section_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mb-5 mb-lg-0" >
-                    <div class="blog_left_sidebar">
-
-                        <article class="blog_item">
-                            <div class="blog_item_img" style="position: relative ;">
-                                <!-- Thumbnail image for the YouTube video -->
-                                <a href="" target="_blank">
-                                    <img class="card-img rounded-0" src="../final/kreativ.jpg" alt="YouTube Video Thumbnail">
-                                    <!-- Video icon positioned in the center of the thumbnail -->
-                                   
-                                </a>
-                                <a href="" class="blog_item_date" style="background-color: #30558b; color: white;">
-                                    <h3>12</h3>
-                                    <p>Aug, 2023 </p>
-                                </a>
-                            </div>
-                        
-                            <div class="blog_details">
-                                <!-- Link to the blog post -->
-                                <a class="d-inline-block" href="">
-                                    <h2>Marketing-Hands on Training Program
-
-                                    </h2>
-                                </a>
-                                <p>
-                                    I collaborated with a cross-functional team to create and execute a unified media plan for IKEA (Spain), covering Press, Magazines, Radio, Outdoor, and TV, which resulted in a 10% boost in brand reach. I also generated engaging blog content on WORDPRESS for MONAIE, strategically using keyword analysis to increase online visibility and engagement. Additionally, I conducted a thorough analysis of Delta Airlines' market segmentation, positioning, and SWOT matrix, providing key competitor insights. These insights informed strategic growth recommendations for the company.
-                        <article class="blog_item">
-                            <div class="blog_item_img" style="position: relative ;">
-                                <!-- Thumbnail image for the YouTube video -->
-                                <a href="" target="_blank">
-                                    <img class="card-img rounded-0" src="../final/img/berkeley.jpg" alt="YouTube Video Thumbnail">
-                                    <!-- Video icon positioned in the center of the thumbnail -->
-                                   
-                                </a>
-                                <a href="" class="blog_item_date" style="background-color: #30558b; color: white;">
-                                    <h3>12</h3>
-                                    <p>May,2023 </p>
-                                </a>
-                            </div>
-                        
-                            <div class="blog_details">
-                                <!-- Link to the blog post -->
-                                <a class="d-inline-block" href="">
-                                    <h2>Judercio Completes his Semester Study Abroad Program at UC Berkely, having completed a course in "Entrepreneurial and Small Business Operations" course.
-
-                                    </h2>
-                                </a>
-                                <p>
-                                During this semester, i took courses in Technology Entrepreneurship, Designing Startups to Transfrom society, Web Design as well Transformative Leadership                                                   <p>
-
-                        </article>
-                        <article class="blog_item">
-                            <div class="blog_item_img" style="position: relative ;">
-                                <!-- Thumbnail image for the YouTube video -->
-                                <a href="" target="_blank">
-                                    <img class="card-img rounded-0" src="../final/img/AIESEC.JPG" alt="YouTube Video Thumbnail">
-                                    <!-- Video icon positioned in the center of the thumbnail -->
-                                   
-                                </a>
-                                <a href="" class="blog_item_date" style="background-color: #30558b; color: white;">
-                                    <h3>26</h3>
-                                    <p>Jul,2022 </p>
-                                </a>
-                            </div>
-                        
-                            <div class="blog_details">
-                                <!-- Link to the blog post -->
-                                <a class="d-inline-block" href="">
-                                    <h2>Participated in a competition called YouthSpeak Projects organized by AIESEC Moçambique.
-                                    </h2>
-                                </a>
-                                <p>
-                                    On the 26th of July 2022 I,and my team, participated in a competition called YouthSpeak Projects & Forum organized by AIESEC Moçambique. This organization seeks to bring sustainable solutions by allowing the youth to propose different innovative ideas that center around particular SDGs. Fortunately, we won 1st place in the provincial phase of the competition and we are through to the finals (the National phase)! 
-                                </article>
-
-                            </article>
-                            <article class="blog_item">
-                                <div class="blog_item_img" style="position: relative ;">
-                                    <!-- Thumbnail image for the YouTube video -->
-                                    <a href="" target="_blank">
-                                        <img class="card-img rounded-0" src="../final/img/intUK.jpeg" alt="YouTube Video Thumbnail">
-                                        <!-- Video icon positioned in the center of the thumbnail -->
-                                       
-                                    </a>
-                                    <a href="" class="blog_item_date" style="background-color: #30558b; color: white;">
-                                        <h3>22</h3>
-                                        <p>Jun,2022 </p>
-                                    </a>
-                                </div>
-                            
-                                <div class="blog_details">
-                                    <!-- Link to the blog post -->
-                                    <a class="d-inline-block" href="">
-                                        <h2>Internship ExperienceUK
-                                        </h2>
-                                    </a>
-                                    <p>
-                                        Business Marketing and Operations                                  
-                            </article>
-
-                        
-
-                       
-
-                    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    </section>
-    <!--================Blog Area =================-->
-
-
-    <!--::footer_part end::-->
-
-    <!-- jquery plugins here-->
-    <script src="js/jquery-1.12.1.min.js"></script>
-    <!-- popper js -->
-    <script src="js/popper.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- easing js -->
-    <script src="js/jquery.magnific-popup.js"></script>
-    <!-- swiper js -->
-    <script src="js/swiper.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/mixitup.min.js"></script>
-    <!-- particles js -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <!-- slick js -->
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <!-- custom js -->
-    <script src="js/custom.js"></script>
+  <script>
+    // Reveal on scroll
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    },{threshold:.15});
+    document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>

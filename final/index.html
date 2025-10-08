@@ -1,409 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-q4d3qJIW8JbN0NBX9RGz+U2OYlCz/iU/veRJxtozLw2j1BfF+TBnwX9JjmAHr3qTtTjpdP+Z7VwLhPwJ7b8+eA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Judercio Nhauche — Data Analyst Portfolio</title>
+  <meta name="description" content="Data Analyst portfolio of Judercio Nhauche — projects, skills, experience, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="../final/assets/css/style.css" />
 </head>
-
 <body>
-    <div id="navbardiv"> 
-        <nav id="navbar">
-            <ul id="nav-links">
-                <li><a href="#"> Portuguese</a></li>
-                <li><a href="#">English</a></li>
-            </ul>
-        </nav>
+  <div class="bg"></div>
+
+  <!-- Header -->
+  <header class="site-header" data-glass>
+    <a href="index.html" class="brand">
+      <span class="avatar-ring lg">
+        <!-- Your picture -->
+        <img src="BIO.jpg" alt="Portrait of Judercio Nhauche" />
+      </span>
+      <div class="brand-text">
+        <strong>Judercio Nhauche</strong>
+        <span>Data Analyst • MSBA • Storyteller</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="active" href="index.html">Home</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="../final/certifications.html">Certifications</a>
+      <a href="blog.html">Podcasts</a>
+      <a href="#contact">Contact</a>
+      <a class="btn mini primary" href="../final/img/MSBA_Resume_Jose_Nhauche.pdf" download>
+        <i class="fa-solid fa-download"></i> CV
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero hero--tight">
+    <div class="hero-copy">
+      <h1 class="shine">Aspiring Data Analyst exploring insights that drive real-world change.</h1>
+      <p class="sub">
+        Cleaning, modeling, and visualizing data to drive decisions — from refugee mobility analytics to
+        product growth and go-to-market storytelling.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="#projects"><i class="fa-solid fa-bolt"></i> See Technical Projects</a>
+        <a class="btn ghost" href="../final/img/MSBA_Resume_Jose_Nhauche.pdf" download>
+          <i class="fa-solid fa-file-arrow-down"></i> Download CV
+        </a>
+      </div>
     </div>
 
+    <div class="hero-media" data-tilt>
+      <div class="glass-card hero-card">
+        <div class="badge">Toolbox</div>
+        <div class="stack-logos">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">R</span>
+          <span class="chip">Excel</span>
+          <span class="chip">Tableau</span>
+          <span class="chip">JavaScript</span>
+        </div>
+        <div class="card-body">
+          <h3>Analytics Focus</h3>
+          <ul class="checklist compact">
+            <li>Data cleaning & preparation</li>
+            <li>Predictive modeling</li>
+            <li>Dashboards & visualization</li>
+            <li>Experimentation & insights</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div id="navbardiv2">
-        <nav id="navbar2">
-            <ul id="nav-links2">
-                <li><a href="#">Welcome to Judercio's Blog!</a></li>
-                <li>
-                    <a href="index.html">Blog</a>
-                    <a href="blog.html">Podcasts</a>
-                    <a href="certifications.html">Certifications</a>
-                    <a href="#">Contact</a>
-                </li>
-
-            </ul>
-        </nav>
+  <!-- Skills -->
+  <section class="section">
+    <div class="section-head">
+      <h2><i class="fa-solid fa-microchip"></i> Technical Skill Set</h2>
+      <p>Tools and methods I use daily.</p>
     </div>
 
-
-
-    <div id="images">
-        <div class="image-con">
-            <div class="scroll-arrow left"><i class="fas fa-chevron-left"></i></div>
-            <div class="picture"><img src="DM717202.JPG"></div>
-            <a href="https://www.linkedin.com/posts/aiesec-in-mozambique_youthspeakforum-solucaeto-aiesec-activity-6985161176863113216-dORT?utm_source=share&utm_medium=member_desktop"
-                style="text-decoration:none; color: white;">
-                <div class="overlay">
-                    <p class="date1">02/06/23</p>
-                    <h3 class="heading"> JUDERCIO LEADS A TEAM OF 4 STUDENTS IN THE YOUTHSPEAK COMPETITION IN MOZAMBIQUE
-                    </h3>
-                    <p class="text9">Innovation/Entrepreneurship/Pitching</p>
-                </div>
-            </a>
-        </div>
-        
-        <div class="image-con">
-            <div class="picture"><img src="Pic.jpeg"></div>
-            <a href="https://at.ashesi.edu.gh/my-first-year-buddy-judercios-experience-4856b8fd647c"
-                style="text-decoration:none; color: white;">
-                <div class="overlay1">
-                    <p class="date1">10/11/22</p>
-                    <h3 class="heading"> HOW AN EARLY FRIENDSHIP HELPED JUDERCIO NAVIGATE THROUGH ASHESI UNIVERSITY</h3>
-                    <p class="text9">New Envinronment/Freshmen Xperience/Adapting</p>
-                </div>
-            </a>
-
-        </div>
-
-
-
-
-
-        <!-- <div class="picture"><img src="Pic.jpeg"></div> -->
-        <!-- <div class="picture"><img src="SCET.png"></div> -->
-        <div class="image-con">
-            <div class="picture"><img src="GBSN.png"></div>
-            <a href="https://gbsn.org/team-bio-answer-initiative-from-ashesi-university-ghana-champions-africa-business-concept-challenge/"
-                style="text-decoration:none; color: white;">
-                <div class="overlay3">
-                    <p class="date1">03/08/22</p>
-                    <h3 class="heading"> JUDERCIO WINS THE AFRICA BUSINESS CONCEPT CHALLENGE 2022 WITH TEAM BIO-ANSWER
-                        INITIATIVE</h3>
-                    <p class="text9">Innovation/Africa Business Concept Challenge/GBSN</p>
-                </div>
-            </a>
-        </div>
-        <div class="image-con">
-            <div class="picture"><img src="SCET.png"></div>
-            <a href="https://scet.berkeley.edu/new-collaboration-enables-scet-to-bring-african-student-innovators-to-berkeley/"
-                style="text-decoration:none; color: white;">
-                <div class="overlay2">
-                    <p class="date1">10/03/22</p>
-                    <h3 class="heading"> NEW COLLABORATION ENABLES SCET TO BRING AFRICAN STUDENT INNOVATORS TO BERKELY
-                    </h3>
-                    <p class="text9">Innovation/Entrepreneurship/Technology/ Study Abroad</p>
-                </div>
-            </a>
-        </div>
-        <div class="image-con">
-            <div class="picture"><img src="../final/img/eng.jpeg"></div>
-            <a href="https://www.facebook.com/share/v/2jbowQFPByf6FAzx/?mibextid=WC7FNe"
-                style="text-decoration:none; color: white;">
-                <div class="overlay3">
-                    <p class="date1">20/05/22</p>
-                    <h3 class="heading"> Decided to use a part of my summer break to offer English lessons to Mozambicans, free of charge, Live on Facebook every week.</h3>
-                    <p class="text9">Breaking English Barrier</p>
-
-                </div>
-            </a>
-
-
-        </div>
-        <div class="scroll-arrow right"><i class="fas fa-chevron-right"></i></div>
-
+    <div class="grid tech-grid">
+      <div class="glass-card tech-card" data-reveal>
+        <h3>Languages</h3>
+        <p>Python, SQL, R, JavaScript, PHP</p>
+      </div>
+      <div class="glass-card tech-card" data-reveal>
+        <h3>Analytics</h3>
+        <p>Cleaning, feature engineering, forecasting, classification, A/B basics</p>
+      </div>
+      <div class="glass-card tech-card" data-reveal>
+        <h3>Tools</h3>
+        <p>Excel (Power tools), Tableau, Pandas, NumPy, Matplotlib</p>
+      </div>
+      <div class="glass-card tech-card" data-reveal>
+        <h3>Workflow</h3>
+        <p>Stakeholder interviews, requirement mapping, storytelling decks</p>
+      </div>
     </div>
-    <div class="main-container">
-        <div class="content">
-            <div class="frame">
-                <div class="avatar">
-                    <div class="circle">
-                        <img src="BIO.jpg" alt="your-image-alt">
-                    </div>
-                    <h2 class="bio2">Biography</h2>
-                </div>
+  </section>
 
-                <div class="bio-text">
-                    <div id="paragraph">
-                        <p>Judercio is a Young entrepreneur , Marketing enthusiast and Tv personality enthusiast from Mozambique,
-                            currently
-                            studying Management Information Systems at Ashesi university in Ghana.
-                        </p>
-                    </div>
-                    <div class="icons">
-                        <div id="social-icons">
-                            <div id="fb">
-                                <a href=https://www.facebook.com/judercio.nhauche?mibextid=LQQJ4d>
-                                    <i href="#" class="fa fa-facebook"></i>
-                                </a>
-                            </div>
-                            <div id="linkedin">
-                                <a href="https://www.linkedin.com/in/judercio-nhauche/">
-                                    <i class="fa fa-linkedin-square"></i>
-                                </a>
-                            </div>
-                            <div id="insta">
-                                <a href=https://www.instagram.com/judercionhauche />
-                                <i href="#" class="fa fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="section-head">
+      <h2><i class="fa-solid fa-chart-line"></i> Technical Projects</h2>
+      <p>Hands-on analytics, modeling, and dashboards.</p>
+    </div>
+<div class="grid cards">
+  <!-- Afrikanah Wellness / Ashesi University -->
+  <article class="glass-card project" data-reveal data-tilt>
+    <div class="media video">
+      <video autoplay loop muted playsinline preload="metadata">
+        <source src="../final/img/wellness1.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="card-body">
+      <div class="meta">
+        <span class="tag">E-commerce & Analytics</span><time>2024</time>
+      </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
+      <h3>Afrikanah Wellness — Data-Driven E-commerce Platform</h3>
+
+      <p>
+        Built a full-stack e-commerce system to promote African wellness products.  
+        Designed SQL databases, sales dashboards, and analytics tools to track customer behavior, 
+        forecast demand, and optimize inventory in real time.
+      </p>
+
+      <div class="meta foot">
+        <span class="pill">SQL</span>
+        <span class="pill">Python</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">Dashboards</span>
+        <span class="pill">E-commerce</span>
+      </div>
+
+      <!-- GitHub Button -->
+      <div style="margin-top:1rem;">
+        <a href="https://github.com/JudercioNhauche/AfrikanahWellness" target="_blank" style="
+          display:inline-flex; align-items:center; gap:8px;
+          background:linear-gradient(135deg,#59e3ff,#8a7dff);
+          color:#08121f;
+          text-decoration:none;
+          padding:0.5rem 1rem;
+          border-radius:999px;
+          font-weight:600;
+          font-family:Inter, sans-serif;
+          box-shadow:0 0 12px rgba(138,125,255,0.5);
+          transition:all .25s ease;
+        " 
+        onmouseover="this.style.boxShadow='0 0 20px rgba(138,125,255,0.8)'; this.style.transform='translateY(-2px)';" 
+        onmouseout="this.style.boxShadow='0 0 12px rgba(138,125,255,0.5)'; this.style.transform='none';">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </article>
+</div>
 
 
-        <div id="images">
-            <div class="image-container">
-                <div class="image-container">
-                    <video controls style="width: 600px; height: auto;">
-                        <source src="../final/img/rydsomm.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="image-text">
-                        <p class="date">02/05/24</p>
-                        <div id="heading-text">
-                            <a href="https://gbsn.org/team-bio-answer-initiative-from-ashesi-university-ghana-champions-africa-business-concept-challenge/">
-                                <h3 class="image-heading">Judercio helps direct his second Marketing Campaign video for a ridesharing Company, Rydsom</h3>
-                            </a>
-                        </div>
-                        <hr>
-                        <div class="text3">
-                            <p>In this Marketing Campaign video, I played a pivotal role in developing the script and determining the visual setting as well as recording the voice over. This involved brainstorming the core message, crafting engaging dialogue, and ensuring the script aligned with the overall campaign strategy.</p>
 
-                            </div>
-                    </div>
-                </div>
-                <div class="image-container">
-                    <video controls style="width: 600px; height: auto;">
-                        <source src="../final/img/afrikana.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="image-text">
-                        <p class="date">03/06/23</p>
-                        <div id="heading-text">
-                            <a href="https://gbsn.org/team-bio-answer-initiative-from-ashesi-university-ghana-champions-africa-business-concept-challenge/">
-                                <h3 class="image-heading">Judercio directs his first Marketing Campaign video for a startup, Afrikanah Store</h3>
-                            </a>
-                        </div>
-                        <hr>
-                        <div class="text3">
-                            <p>In this Marketing Campaign video, I played a pivotal role in developing the script and determining the visual setting. This involved brainstorming the core message, crafting engaging dialogue, and ensuring the script aligned with the overall campaign strategy. Additionally, I worked on defining the setting for the video, selecting the location, props, and overall aesthetic to create a cohesive and visually appealing backdrop. These efforts combined to produce a compelling video that effectively communicated our marketing objectives and engaged the target audience.
-
-                            </div>
-                    </div>
-                </div>
-                <div class="image-container">
-                    <video autoplay loop muted style="width: 600px; height: auto;">
-                        <source src="../final/img/wellness1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="image-text">
-                        <p class="date">03/04/24</p>
-                        <div id="heading-text">
-                            <a href="http://51.20.183.149/afrikana/">
-                                <h3 class="image-heading">Judercio builds an ecommerce website to sell wellness products as his final Ecommerce project. <br> Click here to navigate website! </a>
-                        </div>
-                        <hr>
-                        <div class="text3">
-                            <p>Afrikanah's focus on  infused wellness products and a platform for holistic health products holds promising market potential, addressing increasing demands for natural, accessible, and holistic well-being solutions in high-stress environments. My goal is to promote positive mental health and healing within African communities through advocacy, education, and mental wellness kit.
-
-                            </div>
-                    </div>
-                </div>
-                
-                <img src="DM717202.JPG">
-                <div class="image-text">
-                    <p class="date">02/06/23</p>
-                    <a href="design_responses.html" style="color: white" id="design-response-link">Design Responses
-                        Here</a>
-
-                    <div id="heading-text">
-
-                        <a
-                            href="https://www.linkedin.com/posts/aiesec-in-mozambique_youthspeakforum-solucaeto-aiesec-activity-6985161176863113216-dORT?utm_source=share&utm_medium=member_desktop">
-                            <h3 class="image-heading" style="color: black">JUDERCIO LEADS A TEAM OF 4 STUDENTS IN THE
-                                YOUTHSPEAK
-                                COMPETITION IN MOZAMBIQUE</h3>
-                        </a>
-                    </div>
-                    <hr>
-                    <div class="text">
-                        <p><em>Give voice to your Ideas!</em> It was under this motto that the YouthSpeak Forum took
-                            place, which
-                            is
-                            an event that brings together young people, university students, entrepreneurs, businessmen
-                            and business
-                            managers, as well as intellectuals and specialists in various fields, to discuss together
-                            relevant
-                            issues
-                            for the country and the world. The 4th of the #YouthSpeakForum held on the 28th and 29th of
-                            July, this
-                            year, at the Escola Superior de Ciências Náuticas, in the city of Maputo, and was attended
-                            by more than
-                            200 young people from the provincial capitals of the country, namely: Maputo , Beira and
-                            Nampula....</p>
-                    </div>
-                </div>
-                <div class="image-container">
-                    <img src="Pic.jpeg">
-                    <div class="image-text">
-                        <p class="date">10/11/22</p>
-                        <div id="heading-text">
-                            <a href="https://at.ashesi.edu.gh/my-first-year-buddy-judercios-experience-4856b8fd647c">
-                                <h3 class="image-heading">HOW AN EARLY FRIENDSHIP HELPED JUDERCIO NAVIGATE THROUGH
-                                    ASHESI UNIVERSITY
-                                </h3>
-                            </a>
-                        </div>
-                        <hr>
-                        <div class="text2">
-                            <p> When Judercio Nhauche'24 first arrived in Ghana, he thought it looked like his country
-                                Mozambique.
-                                Having had his high school education in South Africa, coming to Ashesi was not his first
-                                experience as
-                                an international student. However, he knew it would have new challenges and things to
-                                learn. There was
-                                a
-                                lot he believed he would have to figure out quickly. And this was why he was excited to
-                                learn about
-                                Ashesi's Buddy-Up Programme....</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="image-container">
-                    <img src="GBSN.png">
-                    <div class="image-text">
-                        <p class="date">03/08/22</p>
-                        <div id="heading-text">
-                            <a
-                                href="https://gbsn.org/team-bio-answer-initiative-from-ashesi-university-ghana-champions-africa-business-concept-challenge/">
-                                <h3 class="image-heading">JUDERCIO WINS THE AFRICA BUSINESS CONCEPT CHALLENGE 2022 WITH
-                                    TEAM
-                                    BIO-ANSWER
-                                    INITIATIVE</h3>
-                            </a>
-                        </div>
-                        <hr>
-                        <div class="text3">
-                            <p>The GBSN Africa Business Concept Challenge returned for its sophomore year with 293
-                                students in 78
-                                teams from 46 schools in 17 countries across Africa earlier this year in March. For 10
-                                weeks, students
-                                have been incessantly innovating in the aim of identifying a locally-relevant community
-                                need or
-                                challenge and developing a solution, related to Agenda 2063, that would efficaciously
-                                impact their
-                                community while concurrently scoring high! It was through this perseverance and
-                                innovation from the
-                                student teams, coupled with the competition’s distinguished international panel of....
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="image-container">
-                    <img src="SCET.png">
-                    <div class="image-text">
-                        <p class="date">10/03/22</p>
-                        <div id="heading-text">
-                            <a
-                                href="https://scet.berkeley.edu/new-collaboration-enables-scet-to-bring-african-student-innovators-to-berkeley/">
-                                <h3 class="image-heading">NEW COLLABORATION ENABLES SCET TO BRING AFRICAN STUDENT
-                                    INNOVATORS TO
-                                    BERKELY
-                                </h3>
-                            </a>
-                        </div>
-                        <hr>
-                        <div class="text4">
-                            <p>The Sutardja Center for Entrepreneurship & Technology (SCET), Center for African Studies,
-                                and the
-                                Mastercard Foundation Scholars Program are playing a vital role in helping Africa grow
-                                by providing
-                                valuable training for Africa’s youth.
-                                Five students from Ashesi University in Ghana ventured to Berkeley for the Spring 2023
-                                semester to
-                                take
-                                classes and gain entrepreneurship and innovation skills at SCET. The students include
-                                Abigail Efua
-                                Tetteh (Ghana), Judercio Nhauche (Mozambique), Mcebo Vincent Hlanze (Eswatini), Sandra
-                                Nettey (Ghana),
-                                and Styve Zeumo Lekane (Cameroon)..... </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="image-container">
-                    <img href ="https://www.linkedin.com/posts/judercio-nhauche_skiing-mtshasta-redding-activity-7046484602437177344-JoKf?utm_source=share&utm_medium=member_desktop" src="Skii.jpeg">
-                    <div class="image-text">
-                        <p class="date">01/01/22</p>
-                        <div id="heading-text">
-                            <a
-                                href="https://www.linkedin.com/posts/judercio-nhauche_skiing-mtshasta-redding-activity-7046484602437177344-JoKf?utm_source=share&utm_medium=member_desktop">
-                                <h3 class="image-heading">ENJOYED SKIING FOR THE FIRST TIME AT MT. SHASTA, CA ON MAR
-                                    27TH. NOTHING
-                                    BEATS A DAY ON THE SLOPES!</h3>
-                            </a>
-                        </div>
-                        <hr>
-                        <div class="text5">
-                            <p>Nothing beats a day on the slopes! On Monday, March 27th, I had an amazing time skiing
-                                for the first
-                                time at Mt. Shasta, California. The snow was perfect, and the views were breathtaking.
-                                It was a great
-                                opportunity to disconnect from studies for a bit and enjoy some fresh air.... </p>
-                        </div>
-
-                    
-                    </div>
-                    
-                </div>
-                
-            </div>
-            
-        </div>
-
-        <!-- <div class="back_to_to">
-              <i style='font-size:24px' class='fas'>&#xf358;</i>
-            </div> -->
-        <footer>
-            <div class="footer-menu">
-                <ul>
-                    <div id="icon7">
-                        <a href=https://www.facebook.com/judercio.nhauche?mibextid=LQQJ4d>
-                            <i href="#" class="fa fa-facebook" style="color: white"></i>
-                        </a>
-                        <a href=https://www.linkedin.com/in/judercio-nhauche/>
-                            <i class="fa fa-linkedin-square" style="color:white"></i>
-                        </a>
-                        <a href=https://www.instagram.com/judercionhauche/>
-                            <i href="#" class="fa fa-instagram" style="color:white"></i>
-                        </a>
-                    </div>
-                </ul>
-                <ul class="footer-links">
-                    <a href="#" id="scroll-to-top"><i class="fa fa-arrow-circle-up"></i></a>
-                    <li><a href="#">Blog</a></li>
-                    <li> Media</li>
-                    <li>Conferences</li>
-                    <li>Initiatives</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-        </footer>
-
+    <!-- Ashesi Bus Booking System -->
+<article class="glass-card project" data-reveal data-tilt>
+  <div class="media image">
+    <img src="../final/img/Bus_System.png" alt="Ashesi Bus Booking System" 
+         style="width:100%; border-radius:14px; object-fit:cover;">
+  </div>
+  <div class="card-body">
+    <div class="meta">
+      <span class="tag">Web App / Automation</span><time>2024</time>
+    </div>
+    <h3>Ashesi Bus Booking System</h3>
+<p>
+  Built a full-stack bus booking platform for university staff to reserve and pay for rides online. 
+  Integrated automated payments, seat tracking, and analytics dashboards using 
+  <strong>PHP</strong>, <strong>JavaScript</strong>, and <strong>MySQL</strong> to replace manual ticketing 
+  and streamline operations.
+</p>
+    <div class="meta foot">
+      <span class="pill">PHP</span>
+      <span class="pill">JavaScript</span>
+      <span class="pill">SQL / MySQL</span>
+      <span class="pill">Automation</span>
     </div>
 
+    <!-- GitHub Button -->
+    <div style="margin-top:1rem;">
+      <a href="https://github.com/JudercioNhauche/AshesiBusBookingSystem" target="_blank" style="
+        display:inline-flex; align-items:center; gap:8px;
+        background:linear-gradient(135deg,#59e3ff,#8a7dff);
+        color:#08121f;
+        text-decoration:none;
+        padding:0.5rem 1rem;
+        border-radius:999px;
+        font-weight:600;
+        font-family:Inter, sans-serif;
+        box-shadow:0 0 12px rgba(138,125,255,0.5);
+        transition:all .25s ease;
+      "
+      onmouseover="this.style.boxShadow='0 0 20px rgba(138,125,255,0.8)'; this.style.transform='translateY(-2px)';"
+      onmouseout="this.style.boxShadow='0 0 12px rgba(138,125,255,0.5)'; this.style.transform='none';">
+        <i class="fa-brands fa-github"></i> View on GitHub
+      </a>
+    </div>
+  </div>
+</article>
+
+
+      <!-- Afrikanah -->
+      <article class="glass-card project" data-reveal data-tilt>
+        <div class="media video">
+          <video controls preload="metadata">
+            <source src="../final/img/afrikana.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="card-body">
+          <div class="meta"><span class="tag">E-commerce</span><time>2023</time></div>
+          <h3>Afrikanah Store — Marketing campaign</h3>
+          <p>Concept, script, and location design; analyzed engagement and conversions to iterate messaging.</p>
+          <div class="meta foot">
+            <span class="pill">Funnel analysis</span>
+            <span class="pill">Content</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="section-head">
+      <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+      <p>Where I applied analytics to real problems.</p>
+    </div>
+
+    <div class="timeline">
+      <!-- IOM -->
+      <article class="timeline-item glass-card" data-reveal>
+        <div class="ti-head">
+          <h3>Research Scientist Intern — International Organization for Migration</h3>
+          <span class="ti-meta">Apr–Jul 2025 · Geneva (Remote/Hybrid)</span>
+        </div>
+        <ul class="bullets">
+          <li>Cleaned/structured refugee data (600k+ records, 90+ countries) into analyzable tables.</li>
+          <li>Built pivot dashboards to inform policy recommendations.</li>
+          <li>Developed deep-learning inflow forecasts across 20+ SADC countries (≈18% accuracy lift).</li>
+        </ul>
+      </article>
+
+      <!-- Toda -->
+      <article class="timeline-item glass-card" data-reveal>
+        <div class="ti-head">
+          <h3>Marketing & Customer Success Intern — Toda Healthy Beverages</h3>
+          <span class="ti-meta">Sep 2023–Jun 2024 · Accra</span>
+        </div>
+        <ul class="bullets">
+          <li>Designed/executed surveys → +20% adoption, +15% customer satisfaction.</li>
+          <li>Built/ran content calendar → +30% engagement.</li>
+        </ul>
+      </article>
+
+      <!-- MAMA Money -->
+      <article class="timeline-item glass-card" data-reveal>
+        <div class="ti-head">
+          <h3>Customer Outreach Representative — MAMA Money</h3>
+          <span class="ti-meta">Jul 2020–Jan 2023 · Johannesburg</span>
+        </div>
+        <ul class="bullets">
+          <li>Onboarded 150+ diaspora users in 7 months (120% of target).</li>
+          <li>Retained 80% repeat txns (vs. 60% baseline) → ~33% LTV lift.</li>
+        </ul>
+      </article>
+
+      <!-- UC Berkeley SCET -->
+      <article class="timeline-item glass-card" data-reveal>
+        <div class="ti-head">
+          <h3>Innovator — UC Berkeley SCET</h3>
+          <span class="ti-meta">Jan–Jul 2024 · California</span>
+        </div>
+        <ul class="bullets">
+          <li>Analyzed hospital data to train predictive models for disease/drug demand.</li>
+          <li>Held 40+ stakeholder interviews to shape prototype requirements.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Source for resume content -->
+    <p class="source-note">Experience, skills and education are based on your latest resume file. :contentReference[oaicite:2]{index=2}</p>
+  </section>
+
+  <!-- Contact -->
+<section id="contact" class="section contact" style="padding: 4rem 2rem;">
+  <div class="section-head" style="text-align:center; margin-bottom: 2.5rem;">
+    <h2 style="font-family: Poppins, sans-serif; font-weight:700; background:linear-gradient(90deg,#59e3ff,#8a7dff); -webkit-background-clip:text; color:transparent;">
+      <i class="fa-solid fa-paper-plane"></i> Contact
+    </h2>
+    <p style="color:#9da6c0;">Let’s connect and collaborate on something meaningful.</p>
+  </div>
+
+  <div class="glass-card" style="
+    max-width:800px;
+    margin:auto;
+    backdrop-filter:blur(18px);
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:18px;
+    padding:2.2rem 2rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 8px 35px rgba(0,0,0,0.5);
+  ">
+    <div style="flex:1 1 300px; margin-bottom:1.5rem;">
+      <h3 style="font-weight:600; margin-bottom:0.8rem;">Get in Touch</h3>
+      <p style="color:#cbd2e3; margin-bottom:0.5rem;"><i class="fa-solid fa-location-dot"></i> Waltham, Massachusetts, USA</p>
+      <p style="color:#cbd2e3; margin-bottom:0.5rem;">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:judercio.nhauche@brandeis.edu" style="color:#59e3ff; text-decoration:none;">judercio.nhauche@brandeis.edu</a>
+      </p>
+      <p style="color:#cbd2e3; margin-bottom:0.5rem;">
+        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/judercio/" target="_blank" style="color:#59e3ff; text-decoration:none;">linkedin.com/in/judercionhauche</a>
+      </p>
+      <p style="color:#cbd2e3; margin-bottom:0.5rem;">
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/JudercioNhauche" target="_blank" style="color:#59e3ff; text-decoration:none;">github.com/JudercioNhauche</a>
+      </p>
+      <p style="color:#cbd2e3;"><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/258858436137" style="color:#59e3ff; text-decoration:none;">+1 (857) 919-3713</a></p>
+    </div>
+
+    <div style="text-align:center;">
+      <img src="../final/img/RMM_1988-Editar.jpg" alt="Judercio Nhauche portrait"
+           style="width:160px; height:160px; object-fit:cover; border-radius:50%; border:2px solid rgba(255,255,255,0.2); box-shadow:0 0 20px rgba(89,227,255,0.3); margin-bottom:1.2rem;">
+      <div>
+        <a href="../final/img/MSBA_Resume_Jose_Nhauche.pdf" download class="btn-cv" style="
+          display:inline-flex; align-items:center; gap:8px;
+          background:linear-gradient(135deg,#59e3ff,#8a7dff);
+          color:#08121f; text-decoration:none;
+          padding:0.55rem 1.1rem; border-radius:999px; font-weight:700;">
+          <i class="fa-solid fa-file-arrow-down"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer" data-glass>
+    <span>© <span id="year"></span> Judercio Nhauche</span>
+    <div class="foot-right">
+      <a href="https://www.linkedin.com/in/judercio/" target="_blank" class="pill">LinkedIn</a>
+      <a href="https://github.com/judercionhauche" target="_blank" class="pill">GitHub</a>
+      <a href="#" class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="../final/assets/css/script.js" defer></script>
 </body>
-
 </html>
-<script src="assets/css/script.js"></script>
