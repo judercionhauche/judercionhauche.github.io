@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website QA Portal — Client Quality Assessment</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        header {
+            padding: 20px 30px;
+            background: #1e293b;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+            color: #f1f5f9;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        section {
+            background: #1e293b;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #93c5fd;
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #334155;
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        th {
+            background: #0f172a;
+            color: #f8fafc;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background: #111827;
+        }
+
+        input,
+        select,
+        textarea {
+            background: #0f172a;
+            border: 1px solid #475569;
+            color: #f8fafc;
+            border-radius: 5px;
+            padding: 6px;
+            width: 100%;
+        }
+
+        label {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 4px;
+            color: #cbd5e1;
+        }
+
+        button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+
+        footer {
+            background: #1e293b;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Website Quality Assurance Portal</h1>
+        <p>Checking overall functional requirements of your Website</p>
+    </header>
+    <main>
+        <section>
+            <h2>Client & QA Details</h2>
+            <label>Website Name / URL</label><input id="siteName" placeholder="e.g. www.clientwebsite.com">
+            <label>Client / Organization</label><input id="clientName" placeholder="e.g. BrightPath Solutions">
+            <label>QA Analyst / Tester</label><input id="qaName" placeholder="e.g. Judercio Nhauche">
+            <label>Review Date</label><input id="reviewDate" type="date">
+            <label>Overall Rating (1-10)</label><input id="rating" type="number" min="1" max="10" step="0.5">
+            <label>General Observations</label><textarea id="observations" rows="4"
+                placeholder="Add remarks about the site design, performance, and user experience..."></textarea>
+        </section>
+
+        <section id="qa-list">
+            <h2>Functional Requirements Checklist</h2>
+            <table id="qaTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Category</th>
+                        <th>Checklist Item</th>
+                        <th>Status</th>
+                        <th>Comments</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button id="downloadPDF">Download PDF Report</button>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 BrightPath QA | All rights reserved.
+    </footer>
+
+    <script>
+        const checklist = [
+            { category: 'Functionality Testing', item: 'All pages load without errors (404, 500, etc.)' },
+            { category: 'Functionality Testing', item: 'Navigation menu links work correctly' },
+            { category: 'Functionality Testing', item: 'Contact forms submit successfully and send emails' },
+            { category: 'Functionality Testing', item: 'Search functionality works as expected' },
+            { category: 'Functionality Testing', item: 'Social media icons link to correct profiles' },
+            { category: 'Functionality Testing', item: 'External links open in a new tab (if intended)' },
+            { category: 'Functionality Testing', item: 'Internal links are not broken' },
+            { category: 'Functionality Testing', item: 'Login/registration process is functional' },
+            { category: 'Functionality Testing', item: 'Amelia Booking forms function correctly (with notifications)' },
+            { category: 'Content Verification', item: 'All text is proofread and correct' },
+            { category: 'Content Verification', item: 'Copyright and footer info is updated' },
+            { category: 'Content Verification', item: 'Dummy content removed' },
+            { category: 'Backup & Launch Readiness', item: 'Backup plugin installed and configured' },
+            { category: 'Backup & Launch Readiness', item: 'Full site backup taken before going live' },
+            { category: 'Backup & Launch Readiness', item: 'Legal pages (Privacy Policy, T&C) are in place' },
+            { category: 'Backup & Launch Readiness', item: 'Maintenance mode is off or scheduled properly' },
+            { category: 'Backup & Launch Readiness', item: 'Redirects are set correctly (if domain/site structure changed)' },
+            { category: 'Analytics & Tracking', item: 'Google Analytics (GA4) properly installed' },
+            { category: 'Analytics & Tracking', item: 'Google Tag Manager is set up correctly' },
+            { category: 'Analytics & Tracking', item: 'Facebook Pixel or other trackers installed (if required)' },
+            { category: 'Analytics & Tracking', item: 'Conversion goals/events are tracked' },
+        ];
+
+        const tbody = document.querySelector('#qaTable tbody');
+        checklist.forEach((item, idx) => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `<td>${idx + 1}</td><td>${item.category}</td><td>${item.item}</td>
+      <td><select><option>Pending</option><option>In Progress</option><option>Done</option><option>N/A</option></select></td>
+      <td contenteditable='true'></td>`;
+            tbody.appendChild(tr);
+        });
+
+        document.getElementById('downloadPDF').addEventListener('click', () => {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF({ orientation: 'portrait', unit: 'pt', format: 'a4' });
+            const site = document.getElementById('siteName').value || 'N/A';
+            const client = document.getElementById('clientName').value || 'N/A';
+            const qa = document.getElementById('qaName').value || 'N/A';
+            const date = document.getElementById('reviewDate').value || new Date().toLocaleDateString();
+            const rating = document.getElementById('rating').value || 'N/A';
+            const obs = document.getElementById('observations').value || '';
+
+            doc.setFont('helvetica', '');
+            doc.setFontSize(16);
+            doc.text('Website Quality Assurance Report', 40, 40);
+            doc.setFontSize(11);
+            doc.text(`Client/Organization: ${client}`, 40, 60);
+            doc.text(`Website: ${site}`, 40, 75);
+            doc.text(`QA Analyst: ${qa}`, 40, 90);
+            doc.text(`Date: ${date}`, 40, 105);
+            doc.text(`Overall Rating: ${rating}/10`, 40, 120);
+
+            doc.setFontSize(12);
+            doc.text('General Observations:', 40, 145);
+            doc.setFontSize(10);
+            doc.text(obs, 40, 160, { maxWidth: 500 });
+
+            let y = 200;
+            doc.setFontSize(13);
+            doc.text('Functional Requirements Checklist', 40, y);
+            y += 20;
+
+            const rows = document.querySelectorAll('#qaTable tbody tr');
+            doc.setFontSize(10);
+            rows.forEach((r, i) => {
+                const cols = r.querySelectorAll('td');
+                const line = `${cols[0].innerText}. [${cols[1].innerText}] ${cols[2].innerText} — Status: ${cols[3].querySelector('select').value}`;
+                doc.text(line, 40, y, { maxWidth: 520 });
+                y += 16;
+                if (y > 760) { doc.addPage(); y = 40; }
+            });
+            doc.save(`${client.replace(/\s+/g, '_')}_QA_Report.pdf`);
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+
+</html>
