@@ -118,6 +118,72 @@
       <p>Hands-on analytics, modeling, and dashboards.</p>
     </div>
 <div class="grid cards">
+
+  <!-- Customer Spending Prediction -->
+<article class="glass-card project" data-reveal data-tilt>
+  <div class="media collage" style="display:grid; grid-template-columns:repeat(2,1fr); gap:6px; border-radius:14px; overflow:hidden;">
+    <img src="../final/img/HS_RF_feature_importance.png" alt="Feature Importance — Random Forest"
+         style="width:100%; height:100%; object-fit:cover;">
+    <img src="../final/img/HS_Random_Forest_ROC.png" alt="ROC Curve — Random Forest"
+         style="width:100%; height:100%; object-fit:cover;">
+    <img src="../final/img/HS_Logistic_+_SMOTE_ROC.png" alt="ROC Curve — Logistic + SMOTE"
+         style="width:100%; height:100%; object-fit:cover;">
+    <img src="../final/img/HS_Logistic_(class_weight=balanced)_ROC.png" alt="ROC Curve — Logistic Balanced"
+         style="width:100%; height:100%; object-fit:cover;">
+  </div>
+
+  <div class="card-body">
+    <div class="meta">
+      <span class="tag">Predictive Analytics / Machine Learning</span><time>2025</time>
+    </div>
+
+    <h3>Customer Spending Prediction — Identifying High-Value Buyers</h3>
+
+    <p>
+      Developed a predictive analytics model to classify <strong>high-spending customers</strong> 
+      using demographic and behavioral data. Built end-to-end pipeline including data cleaning, 
+      <strong>SMOTE balancing</strong>, and <strong>feature engineering</strong> to improve classification accuracy. 
+      Evaluated multiple algorithms — Logistic Regression, Random Forest, and XGBoost — and visualized 
+      results through ROC curves and feature-importance dashboards.
+    </p>
+
+    <ul style="margin-top:0.7rem; color:var(--muted); line-height:1.55;">
+      <li>Engineered <strong>High_Spender</strong> target variable to classify customers above average purchase amount.</li>
+      <li>Improved class balance using <strong>SMOTE</strong> and model robustness through <strong>interaction features</strong>.</li>
+      <li>Identified <strong>Review_Rating</strong> and <strong>Previous_Purchases</strong> as top predictors of high spending.</li>
+    </ul>
+
+    <div class="meta foot">
+      <span class="pill">Python</span>
+      <span class="pill">pandas</span>
+      <span class="pill">scikit-learn</span>
+      <span class="pill">imbalanced-learn</span>
+      <span class="pill">XGBoost</span>
+      <span class="pill">Data Visualization</span>
+    </div>
+
+    <!-- GitHub Button -->
+    <div style="margin-top:1rem;">
+      <a href="https://github.com/judercionhauche/High-Spender-Prediction" target="_blank" style="
+        display:inline-flex; align-items:center; gap:8px;
+        background:linear-gradient(135deg,#59e3ff,#8a7dff);
+        color:#08121f;
+        text-decoration:none;
+        padding:0.5rem 1rem;
+        border-radius:999px;
+        font-weight:600;
+        font-family:Inter, sans-serif;
+        box-shadow:0 0 12px rgba(138,125,255,0.5);
+        transition:all .25s ease;
+      "
+      onmouseover="this.style.boxShadow='0 0 20px rgba(138,125,255,0.8)'; this.style.transform='translateY(-2px)';"
+      onmouseout="this.style.boxShadow='0 0 12px rgba(138,125,255,0.5)'; this.style.transform='none';">
+        <i class="fa-brands fa-github"></i> View on GitHub
+      </a>
+    </div>
+  </div>
+</article>
+
   <!-- Afrikanah Wellness / Ashesi University -->
   <article class="glass-card project" data-reveal data-tilt>
     <div class="media video">
