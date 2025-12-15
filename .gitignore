@@ -2,3 +2,9 @@
 *.twbx
 *.hyper
 *.tde
+
+# Tableau
+*.twb
+*.twbx
+*.hyper
+*.tde
