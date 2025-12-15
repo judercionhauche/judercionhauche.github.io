@@ -118,39 +118,139 @@
       <p>Hands-on analytics, modeling, and dashboards.</p>
     </div>
 <div class="grid cards">
-
-  <!-- Customer Spending Prediction -->
+<!-- In-N-Out Burger Boston Location Analytics -->
 <article class="glass-card project" data-reveal data-tilt>
-  <div class="media collage" style="display:grid; grid-template-columns:repeat(2,1fr); gap:6px; border-radius:14px; overflow:hidden;">
-    <img src="../final/img/HS_RF_feature_importance.png" alt="Feature Importance — Random Forest"
-         style="width:100%; height:100%; object-fit:cover;">
-    <img src="../final/img/HS_Random_Forest_ROC.png" alt="ROC Curve — Random Forest"
-         style="width:100%; height:100%; object-fit:cover;">
-    <img src="../final/img/HS_Logistic_+_SMOTE_ROC.png" alt="ROC Curve — Logistic + SMOTE"
-         style="width:100%; height:100%; object-fit:cover;">
-    <img src="../final/img/HS_Logistic_(class_weight=balanced)_ROC.png" alt="ROC Curve — Logistic Balanced"
-         style="width:100%; height:100%; object-fit:cover;">
+
+  <!-- 4-image collage (uniform scale) -->
+  <div class="media collage" style="
+    width:100%;
+    border-radius:16px;
+    overflow:hidden;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:8px;
+    padding:8px;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+  ">
+    <img src="../final/img/pic1.png" alt="Boston restaurant footprint map"
+         style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; display:block;">
+    <img src="../final/img/pic2.png" alt="Boston market landscape dashboard"
+         style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; display:block;">
+    <img src="../final/img/pic3.png" alt="Fast food behavior vs demand scatter"
+         style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; display:block;">
+    <img src="../final/img/pic4.png" alt="Acquisition strategy slide"
+         style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; display:block;">
+  </div>
+
+  <div class="card-body" style="padding:1.3rem 1.5rem;">
+    <div class="meta" style="display:flex; justify-content:space-between; align-items:center;">
+      <span class="tag" style="
+        border:1px solid rgba(89,227,255,0.6);
+        color:rgba(89,227,255,0.9);
+        background:rgba(89,227,255,0.08);
+        border-radius:999px;
+        padding:0.25rem 0.75rem;
+        font-size:0.85rem;
+        font-weight:600;">
+        Location Analytics
+      </span>
+      <time style="color:#b8c0d8;">2025</time>
+    </div>
+
+    <h3 style="margin-top:0.9rem; font-size:1.15rem; font-weight:700;">
+      In-N-Out Burger — Boston Site Selection & Demand Analysis
+    </h3>
+
+    <p style="color:var(--muted); margin-top:0.4rem; line-height:1.55;">
+      Conducted a data-driven location analysis to identify the optimal launch site for
+      <strong>In-N-Out Burger</strong> in Boston. Used mobile visitation data to evaluate
+      <strong>demand, competition density, dwell time, and time-of-day behavior</strong> across ZIP codes.
+      Findings identified <strong>Faneuil Hall / Quincy Market</strong> as the best-fit entry location
+      due to high foot traffic, fast-turnover behavior, and strong tourist and office-worker overlap.
+    </p>
+
+    <div class="meta foot" style="margin-top:0.8rem; display:flex; flex-wrap:wrap; gap:0.45rem;">
+      <span class="pill">Python</span>
+      <span class="pill">Tableau</span>
+      <span class="pill">Geospatial Analysis</span>
+      <span class="pill">Market Strategy</span>
+      <span class="pill">Retail Analytics</span>
+    </div>
+
+    <!-- GitHub Button -->
+    <div style="margin-top:1rem;">
+      <a href="YOUR_GITHUB_LINK_HERE" target="_blank" style="
+        display:inline-flex; align-items:center; gap:8px;
+        background:linear-gradient(135deg,#59e3ff,#8a7dff);
+        color:#08121f;
+        text-decoration:none;
+        padding:0.55rem 1.1rem;
+        border-radius:999px;
+        font-weight:600;
+        box-shadow:0 0 16px rgba(138,125,255,0.45);
+        transition:all .25s ease;
+      "
+      onmouseover="this.style.boxShadow='0 0 22px rgba(138,125,255,0.75)'; this.style.transform='translateY(-2px)';"
+      onmouseout="this.style.boxShadow='0 0 16px rgba(138,125,255,0.45)'; this.style.transform='none';">
+        <i class="fa-brands fa-github"></i> View on GitHub
+      </a>
+    </div>
+  </div>
+</article>
+
+ <!-- Customer Spending Prediction -->
+<article class="glass-card project" data-reveal data-tilt>
+
+  <!-- 4-image collage (uniform scale – SAME as In-N-Out) -->
+  <div class="media collage" style="
+    width:100%;
+    border-radius:16px;
+    overflow:hidden;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:8px;
+    padding:8px;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+  ">
+    <img src="../final/img/HS_RF_feature_importance.png"
+         alt="Feature Importance — Random Forest"
+         style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; display:block;">
+
+    <img src="../final/img/HS_Random_Forest_ROC.png"
+         alt="ROC Curve — Random Forest"
+         style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; display:block;">
+
+    <img src="../final/img/HS_Logistic_+_SMOTE_ROC.png"
+         alt="ROC Curve — Logistic + SMOTE"
+         style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; display:block;">
+
+    <img src="../final/img/HS_Logistic_(class_weight=balanced)_ROC.png"
+         alt="ROC Curve — Logistic Balanced"
+         style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; display:block;">
   </div>
 
   <div class="card-body">
     <div class="meta">
-      <span class="tag">Predictive Analytics / Machine Learning</span><time>2025</time>
+      <span class="tag">Predictive Analytics / Machine Learning</span>
+      <time>2025</time>
     </div>
 
     <h3>Customer Spending Prediction — Identifying High-Value Buyers</h3>
 
     <p>
-      Developed a predictive analytics model to classify <strong>high-spending customers</strong> 
-      using demographic and behavioral data. Built end-to-end pipeline including data cleaning, 
-      <strong>SMOTE balancing</strong>, and <strong>feature engineering</strong> to improve classification accuracy. 
-      Evaluated multiple algorithms — Logistic Regression, Random Forest, and XGBoost — and visualized 
-      results through ROC curves and feature-importance dashboards.
+      Developed a predictive analytics model to classify <strong>high-spending customers</strong>
+      using demographic and behavioral data. Built an end-to-end pipeline including data cleaning,
+      <strong>SMOTE balancing</strong>, and <strong>feature engineering</strong> to improve classification
+      performance. Evaluated Logistic Regression, Random Forest, and XGBoost using ROC curves
+      and feature-importance analysis.
     </p>
 
     <ul style="margin-top:0.7rem; color:var(--muted); line-height:1.55;">
-      <li>Engineered <strong>High_Spender</strong> target variable to classify customers above average purchase amount.</li>
-      <li>Improved class balance using <strong>SMOTE</strong> and model robustness through <strong>interaction features</strong>.</li>
-      <li>Identified <strong>Review_Rating</strong> and <strong>Previous_Purchases</strong> as top predictors of high spending.</li>
+      <li>Engineered a <strong>High_Spender</strong> target variable based on purchase behavior.</li>
+      <li>Handled class imbalance using <strong>SMOTE</strong> and interaction features.</li>
+      <li>Identified <strong>Review_Rating</strong> and <strong>Previous_Purchases</strong> as top predictors.</li>
     </ul>
 
     <div class="meta foot">
@@ -164,20 +264,23 @@
 
     <!-- GitHub Button -->
     <div style="margin-top:1rem;">
-      <a href="https://github.com/judercionhauche/predictive-customer-behavior" target="_blank" style="
-        display:inline-flex; align-items:center; gap:8px;
-        background:linear-gradient(135deg,#59e3ff,#8a7dff);
-        color:#08121f;
-        text-decoration:none;
-        padding:0.5rem 1rem;
-        border-radius:999px;
-        font-weight:600;
-        font-family:Inter, sans-serif;
-        box-shadow:0 0 12px rgba(138,125,255,0.5);
-        transition:all .25s ease;
-      "
-      onmouseover="this.style.boxShadow='0 0 20px rgba(138,125,255,0.8)'; this.style.transform='translateY(-2px)';"
-      onmouseout="this.style.boxShadow='0 0 12px rgba(138,125,255,0.5)'; this.style.transform='none';">
+      <a href="https://github.com/judercionhauche/predictive-customer-behavior"
+         target="_blank"
+         style="
+          display:inline-flex;
+          align-items:center;
+          gap:8px;
+          background:linear-gradient(135deg,#59e3ff,#8a7dff);
+          color:#08121f;
+          text-decoration:none;
+          padding:0.55rem 1.1rem;
+          border-radius:999px;
+          font-weight:600;
+          box-shadow:0 0 16px rgba(138,125,255,0.45);
+          transition:all .25s ease;
+         "
+         onmouseover="this.style.boxShadow='0 0 22px rgba(138,125,255,0.75)'; this.style.transform='translateY(-2px)';"
+         onmouseout="this.style.boxShadow='0 0 16px rgba(138,125,255,0.45)'; this.style.transform='none';">
         <i class="fa-brands fa-github"></i> View on GitHub
       </a>
     </div>
@@ -236,24 +339,48 @@
 </div>
 
 
-
     <!-- Ashesi Bus Booking System -->
 <article class="glass-card project" data-reveal data-tilt>
-  <div class="media image">
-    <img src="../final/img/Bus_System.png" alt="Ashesi Bus Booking System" 
-         style="width:100%; border-radius:14px; object-fit:cover;">
+
+  <!-- Image media (SAME scale as others: 16:9) -->
+  <div class="media image" style="
+    width:100%;
+    border-radius:16px;
+    overflow:hidden;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+  ">
+    <div style="
+      width:100%;
+      aspect-ratio:16/9;
+      position:relative;
+    ">
+      <img src="../final/img/Bus_System.png"
+           alt="Ashesi Bus Booking System"
+           style="
+             width:100%;
+             height:100%;
+             object-fit:cover;
+             position:absolute;
+             inset:0;
+           ">
+    </div>
   </div>
+
   <div class="card-body">
     <div class="meta">
       <span class="tag">Web App / Automation</span><time>2024</time>
     </div>
+
     <h3>Ashesi Bus Booking System</h3>
-<p>
-  Built a full-stack bus booking platform for university staff to reserve and pay for rides online. 
-  Integrated automated payments, seat tracking, and analytics dashboards using 
-  <strong>PHP</strong>, <strong>JavaScript</strong>, and <strong>MySQL</strong> to replace manual ticketing 
-  and streamline operations.
-</p>
+
+    <p>
+      Built a full-stack bus booking platform for university staff to reserve and pay for rides online.
+      Integrated automated payments, seat tracking, and analytics dashboards using
+      <strong>PHP</strong>, <strong>JavaScript</strong>, and <strong>MySQL</strong> to replace manual ticketing
+      and streamline operations.
+    </p>
+
     <div class="meta foot">
       <span class="pill">PHP</span>
       <span class="pill">JavaScript</span>
@@ -263,20 +390,23 @@
 
     <!-- GitHub Button -->
     <div style="margin-top:1rem;">
-      <a href="https://github.com/judercionhauche/Bus_system" target="_blank" style="
-        display:inline-flex; align-items:center; gap:8px;
-        background:linear-gradient(135deg,#59e3ff,#8a7dff);
-        color:#08121f;
-        text-decoration:none;
-        padding:0.5rem 1rem;
-        border-radius:999px;
-        font-weight:600;
-        font-family:Inter, sans-serif;
-        box-shadow:0 0 12px rgba(138,125,255,0.5);
-        transition:all .25s ease;
-      "
-      onmouseover="this.style.boxShadow='0 0 20px rgba(138,125,255,0.8)'; this.style.transform='translateY(-2px)';"
-      onmouseout="this.style.boxShadow='0 0 12px rgba(138,125,255,0.5)'; this.style.transform='none';">
+      <a href="https://github.com/judercionhauche/Bus_system"
+         target="_blank"
+         style="
+          display:inline-flex;
+          align-items:center;
+          gap:8px;
+          background:linear-gradient(135deg,#59e3ff,#8a7dff);
+          color:#08121f;
+          text-decoration:none;
+          padding:0.55rem 1.1rem;
+          border-radius:999px;
+          font-weight:600;
+          box-shadow:0 0 16px rgba(138,125,255,0.45);
+          transition:all .25s ease;
+         "
+         onmouseover="this.style.boxShadow='0 0 22px rgba(138,125,255,0.75)'; this.style.transform='translateY(-2px)';"
+         onmouseout="this.style.boxShadow='0 0 16px rgba(138,125,255,0.45)'; this.style.transform='none';">
         <i class="fa-brands fa-github"></i> View on GitHub
       </a>
     </div>
