@@ -73,6 +73,10 @@
       font-weight: 700;
       cursor: pointer;
       transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
     }
     .btn-cv:hover { opacity: 0.85; transform: translateY(-1px); }
 
@@ -80,6 +84,7 @@
     .page-head {
       text-align: center;
       margin: 3rem 0 2rem;
+      padding: 0 1rem;
     }
     .page-head h1 {
       font-family: Poppins, Inter, sans-serif;
@@ -90,9 +95,12 @@
       color: transparent;
       background-size: 200% 100%;
       animation: shine 7s ease-in-out infinite;
+      margin: 0 0 0.6rem 0;
     }
-    @keyframes shine { 
-      0%{background-position:0 0} 50%{background-position:100% 0} 100%{background-position:0 0}
+    @keyframes shine {
+      0%{background-position:0 0}
+      50%{background-position:100% 0}
+      100%{background-position:0 0}
     }
 
     /* Grid */
@@ -127,17 +135,19 @@
       display: block;
     }
     .cert-content {
-      padding: 1.3rem 1.2rem 1.6rem;
-    }
+  padding: 1.3rem 1.2rem 3.2rem; /* extra bottom padding */
+}
+
     .cert-content h3 {
       font-size: 1.1rem;
-      margin-bottom: .4rem;
+      margin: 0 0 .4rem 0;
       font-weight: 600;
     }
     .cert-content p {
       color: var(--muted);
       font-size: 0.95rem;
       line-height: 1.45;
+      margin: 0;
     }
     .cert-date {
       position: absolute;
@@ -180,16 +190,37 @@
 
   <section class="page-head">
     <h1>Certifications & Achievements</h1>
-    <p style="color:var(--muted);max-width:640px;margin:0 auto;">Selected programs, trainings, and milestones that have shaped my data and business analytics journey.</p>
+    <p style="color:var(--muted);max-width:640px;margin:0 auto;">
+      Selected programs, trainings, and milestones that have shaped my data and business analytics journey.
+    </p>
   </section>
 
+  <!-- Certifications Grid -->
   <section class="cert-grid">
+
+    <!-- Card 1.0 (NEW - FIRST) -->
+    <article class="cert-card" data-reveal>
+      <img src="./img/Associate.jpeg" alt="Data Analytics Associate">
+      <div class="cert-content">
+        <h3>Data Analytics Associate</h3>
+        <p>
+          I completed the Data Analyst Associate Certification from DataCamp, which assessed my ability to manage data,
+          perform exploratory analysis, run statistical experiments, and communicate insights through clear visualizations.
+          The certification included a timed theory exam and a hands-on practical exam using real-world datasets in SQL and Python.
+        </p>
+      </div>
+      <div class="cert-date">Oct 15, 2025</div>
+    </article>
+
     <!-- Card 1 -->
     <article class="cert-card" data-reveal>
       <img src="../final/kreativ.jpg" alt="Marketing Hands-on Program">
       <div class="cert-content">
         <h3>Marketing — Hands-on Training Program</h3>
-        <p>Collaborated with a cross-functional team to design and execute a unified media plan for IKEA (Spain). Analyzed Delta Airlines’ market segmentation and positioning, creating strategic growth insights that improved reach by 10%.</p>
+        <p>
+          Collaborated with a cross-functional team to design and execute a unified media plan for IKEA (Spain).
+          Analyzed Delta Airlines’ market segmentation and positioning, creating strategic growth insights that improved reach by 10%.
+        </p>
       </div>
       <div class="cert-date">Aug 12, 2023</div>
     </article>
@@ -199,7 +230,10 @@
       <img src="../final/img/berkeley.jpg" alt="UC Berkeley Program">
       <div class="cert-content">
         <h3>UC Berkeley Study Abroad Program</h3>
-        <p>Completed coursework in Technology Entrepreneurship, Startup Design for Social Transformation, Web Design, and Transformative Leadership at UC Berkeley's SCET as part of my MSBA journey.</p>
+        <p>
+          Completed coursework in Technology Entrepreneurship, Startup Design for Social Transformation, Web Design,
+          and Transformative Leadership at UC Berkeley's SCET as part of my MSBA journey.
+        </p>
       </div>
       <div class="cert-date">May 12, 2023</div>
     </article>
@@ -209,7 +243,10 @@
       <img src="../final/img/AIESEC.JPG" alt="AIESEC YouthSpeak Projects">
       <div class="cert-content">
         <h3>YouthSpeak Project Competition — AIESEC Mozambique</h3>
-        <p>Led a team that won 1st place in the provincial phase of YouthSpeak, developing innovative SDG-focused solutions to empower youth through entrepreneurship.</p>
+        <p>
+          Led a team that won 1st place in the provincial phase of YouthSpeak, developing innovative SDG-focused solutions
+          to empower youth through entrepreneurship.
+        </p>
       </div>
       <div class="cert-date">Jul 26, 2022</div>
     </article>
@@ -219,10 +256,14 @@
       <img src="../final/img/intUK.jpeg" alt="Internship UK">
       <div class="cert-content">
         <h3>Internship UK — Business Marketing & Operations</h3>
-        <p>Completed internship in business marketing and operations, focusing on campaign design, client outreach, and process optimization for global audiences.</p>
+        <p>
+          Completed internship in business marketing and operations, focusing on campaign design, client outreach,
+          and process optimization for global audiences.
+        </p>
       </div>
       <div class="cert-date">Jun 22, 2022</div>
     </article>
+
   </section>
 
   <footer>
@@ -231,12 +272,17 @@
 
   <script>
     // Reveal on scroll
-    const io = new IntersectionObserver(entries=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
       });
-    },{threshold:.15});
-    document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+    }, { threshold: .15 });
+
+    document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
