@@ -122,26 +122,60 @@
   <!-- US Economy Forecast Bot (2026) -->
 <article class="glass-card project" data-reveal data-tilt>
 
-  <!-- 4-image collage (uniform scale) -->
-  <div class="media collage" style="
+  <!-- Dashboard preview (single image) -->
+  <div class="media dashboard" style="
     width:100%;
     border-radius:16px;
     overflow:hidden;
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:8px;
-    padding:8px;
+    padding:10px;
     background:rgba(255,255,255,0.04);
     border:1px solid rgba(255,255,255,0.08);
   ">
-    <img src="../final/img/forecast1.png" alt="US Economy Forecast Bot interface"
-         style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; display:block;">
-    <img src="../final/img/forecast2.png" alt="Generated 2026 forecast results"
-         style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; display:block;">
-    <img src="../final/img/forecast3.png" alt="Macro data + forecasting logic view"
-         style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; display:block;">
-    <img src="../final/img/forecast4.png" alt="Deployment and API workflow"
-         style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; display:block;">
+
+    <div style="
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:6px 6px 10px 6px;
+    ">
+      <span style="
+        font-size:0.85rem;
+        font-weight:700;
+        color:rgba(255,255,255,0.88);
+        letter-spacing:0.2px;
+      ">
+        Dashboard
+      </span>
+
+      <span style="
+        font-size:0.75rem;
+        color:rgba(184,192,216,0.9);
+        border:1px solid rgba(255,255,255,0.10);
+        background:rgba(255,255,255,0.04);
+        padding:0.25rem 0.6rem;
+        border-radius:999px;
+      ">
+        Live Preview
+      </span>
+    </div>
+
+    <a href="https://judercionhauche.github.io/us-economy-forecast-bot/" target="_blank" style="display:block;">
+      <img src="../final/img/dashboard.png" alt="US Macro Dashboard preview"
+           style="
+            width:100%;
+            aspect-ratio:16/9;
+            object-fit:cover;
+            border-radius:12px;
+            display:block;
+            box-shadow:0 10px 30px rgba(0,0,0,0.35);
+            transition:transform .25s ease, box-shadow .25s ease;
+           "
+           onmouseover="this.style.transform='scale(1.01)'; this.style.boxShadow='0 0 26px rgba(138,125,255,0.45)';"
+           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.35)';"
+      >
+    </a>
+
   </div>
 
   <div class="card-body" style="padding:1.3rem 1.5rem;">
@@ -181,7 +215,7 @@
 
     <!-- GitHub Button -->
     <div style="margin-top:1rem;">
-      <a href="https://judercionhauche.github.io/us-economy-forecast-bot/" target="_blank" style="
+      <a href="https://judercionhauche.github.io/us-macro-dashboard-2026/" target="_blank" style="
         display:inline-flex; align-items:center; gap:8px;
         background:linear-gradient(135deg,#59e3ff,#8a7dff);
         color:#08121f;
@@ -197,6 +231,7 @@
         <i class="fa-brands fa-github"></i> View on GitHub
       </a>
     </div>
+
   </div>
 </article>
 
