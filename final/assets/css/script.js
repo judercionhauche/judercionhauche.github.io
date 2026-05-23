@@ -71,3 +71,46 @@ document.querySelector('.contact-form')?.addEventListener('submit', (e) => {
     }, 1200);
   }, 800);
 });
+
+// Scroll progress bar
+const progressBar = document.createElement('div');
+progressBar.className = 'progress-bar';
+document.body.insertBefore(progressBar, document.body.firstChild);
+
+window.addEventListener('scroll', () => {
+  const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  progressBar.style.width = scrolled + '%';
+});
+
+// Animated counters (for stats)
+$$('[data-counter]').forEach(el => {
+  const target = parseInt(el.dataset.value);
+  const countEl = el.querySelector('.counter-value');
+  let hasAnimated = false;
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting && !hasAnimated){
+        hasAnimated = true;
+        animateCounter(countEl, 0, target, 1200);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(el);
+});
+
+function animateCounter(el, start, end, duration){
+  let current = start;
+  const range = end - start;
+  const increment = range / (duration / 16);
+  const timer = setInterval(() => {
+    current += increment;
+    if(current >= end){
+      current = end;
+      clearInterval(timer);
+    }
+    el.textContent = Math.floor(current);
+  }, 16);
+}
